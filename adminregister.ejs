@@ -1,0 +1,26 @@
+<% layout('layouts/boilerplat1')%>
+    <h1 class="text-center text-light ">ADMIN REGISTRATION PAGE</h1>
+    <form action="/adminregister" method="POST" class="validated-form" novalidate>
+        <div class="mb-3">
+            <label class="form-label text-light" for="username"> Enter Admin Username</label>
+            <input class="form-control" type="text" id="username" name="username" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label text-light" for="email">Enter Admin Email ID </label>
+            <input class="form-control" type="email" id="email" name="email" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label text-light" for="password"> Enter Admin Password</label>
+            <input class="form-control" type="password" id="password" name="password" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <button class="btn btn-success">Register</button>
+    </form>
